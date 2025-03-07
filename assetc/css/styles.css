@@ -1,0 +1,392 @@
+body{
+    font-weight: 400;
+    color: #ffffff; /**цвет текста белый **/
+    font-size: 24px;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(26,14,1,1) 35%); /* через online css */;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+a {
+    text-decoration: none; /* убираем подчеркивание у ссылок */
+    color: white
+}
+
+ img {
+     max-width: 100%; /* что б не выходил за рамки род узда */
+}
+
+.wraper {
+
+    width: 100%;
+}
+
+
+.container {
+    width: 1300px; 
+    margin: 0 auto; /* Центрирует контейнер */
+}
+
+ header {
+    padding: 50px 0;
+}
+
+header .logo a , footer .block .logo {
+    text-transform: uppercase; /* caps */
+    font-size: 29px;
+    font-weight: 800; /*толщина */
+    color: white
+
+}
+
+
+header nav {
+    float: right;
+    width: 50%;
+}
+
+header nav ul {
+    list-style: none; /*стандартое изображние списка убираем */
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    display: inline-block; /*отдельный блок */ 
+}
+
+header nav ul li a {
+    color: #ffffff;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover{ /*при наведение на ссылку, если он не активный и не кнопка, подчеркивается */
+    border-bottom: 3.6px solid #DC7000;
+    border-radius: 1.5px;
+}
+
+
+header nav ul li.btn a, .email .block button {
+    background: #FA9021;
+    padding: 9px 17px; /* внутренние отступы*/
+    border-radius: 5px;
+    transition: all 500ms ease; /*плавное наедение для всех элементов*/
+}
+
+header nav ul li.btn a:hover, .email .block button:hover{
+    background: #773d00;
+}
+
+
+
+.hero {
+    padding-bottom: 100px;
+}
+
+.hero-info {
+    width: 450px;
+    padding-top: 70px;
+}
+
+.hero-info h2 {
+    color: #FA9021;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+
+.hero-info h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.hero-info p {
+    font-weight: 500;
+    line-height: 170%;
+    margin: 30px 0;
+}
+
+.hero-info .btn {
+    background: #FA9021;
+    color: white;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: 0;
+    transition: all 150ms ease;
+    font-size: 24.5px
+}
+
+.hero-info .btn:hover{
+    transform: scale(1.1);
+    cursor: pointer; /*меняет курсор как ссылку*/
+}
+
+
+.img_contoiler {
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    width: 50%; /* Ширина изображения: 50% от контейнера */
+    height: auto; /* Автоматически рассчитывать высоту для сохранения пропорций */
+    display: block; /* Убирает дополнительные отступы (если нужно) */
+
+}
+
+
+
+
+
+
+
+
+/* секция с играми*/
+
+.container{
+    padding-top: 50px;
+}
+
+
+.trending h3 {
+    font-weight: 600;
+    font-size: 39px;
+}
+
+.trending .see-all, .projects .see-all {
+    color: white;
+    background: #25211D;
+    border-radius: 5px;
+    padding: 12px 23px;
+    float: right;
+    display: block;
+    transition: all 150ms ease;
+}
+
+
+.trending .see-all:hover, .projects .see-all:hover {
+    transform: scale(1.1);
+}
+
+.trending img {
+    border-radius: 20px
+}
+
+.trending .games {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 137px;
+}
+
+.trending .games span {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.big-text {
+    padding: 150px 0;
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+.banner {
+    padding: 80px 0;
+}
+
+.banner h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.banner p {
+    line-height: 170%;
+    margin-bottom: 30px;
+    width: 550px;
+}
+
+
+
+.banner img{
+    width: 100%; /* 100% ширины экрана*/
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/* секция с изображениями*/
+
+.features {
+
+    background: url(../img/ostrova-bonda%20.jpg) no-repeat center center fixed;
+    background-size: cover; /*на все расстоянние*/
+    padding: 90px 0;
+}
+
+.features h3, .features p {
+    margin-bottom: 80px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.features h3{
+    font-size: 34px;
+}
+
+.features .info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  /*что бы пребрасывать на новые ряды*/  
+}
+
+
+.features .info .block {
+    text-align: center;
+    width: 20%;
+    margin: 30px 2%;
+    color: #ff8200;
+    font-weight: 900;
+}
+
+
+.projects {
+    margin: 100px;
+}
+
+.projects h3 {
+    font-size: 34px;
+    text-align: center;
+}
+
+.projects p {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.projects .images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.projects .images img {
+    border-radius: 13px;
+    margin: 20px 20px;
+}
+
+.projects .see-all{
+    width: 100px;
+    float: none;
+    margin: 0 auto;
+}
+
+
+/*НИЖНЯЯ ЧАСТЬ*/
+
+.email h3 {
+    margin-top: 60px;
+    font-size: 34px;
+}
+
+.email .block {
+    background: #1C140F;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 40px 3%;
+    width: 94%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /*центр по вертикали*/
+}
+
+.email .block h4{
+    font-weight: 500;
+    font-size: 34px;
+}
+
+.email .block p {
+    padding-top: 20.5px;
+    width: 500px;
+}
+
+.email .block input {
+    background: #ffffff;
+    border: 0;
+    outline: none; /*убираем подствеку*/
+    border: 0; /*убираем обводку*/
+    border-radius: 5px;
+    width: 380px;
+    padding: 20px 30px;
+    /*color: #ff0000 менять цвет вводимого текста*/
+    
+    position: relative;
+    right: -100px;/*теперь input на кнопке*/
+    z-index: 1; /*это слои как годоте */
+    
+    padding-right: 116px/*чтоб текст не выходил за кнопку*/
+        
+}
+
+.email .block button {
+    border: 0;
+    cursor: pointer;
+    padding: 13px 17px;
+    position: relative;
+    z-index: 2; /*выше по индексу чем input*/
+    color: #ffffff;
+}
+
+
+
+/*подвал*/
+
+footer {
+    background: #000;
+    padding: 50px 0;
+}
+
+footer .block {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .block p {
+    width: 300px;
+    margin: 15px 0;
+}
+
+footer .block h4 {
+    font-weight: 500;
+    font-size: 26;   
+}
+
+footer .block ul {
+    list-style: none;
+}
+
+footer .block li {
+    margin-top: 7px;
+    opacity: 0.8 /*прозрачноть*/
+}
+
+footer hr{
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background: #ccc
+}
+
+footer >p{
+    text-align: center;
+}
